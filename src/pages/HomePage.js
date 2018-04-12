@@ -5,13 +5,9 @@ import { Card, Button } from 'react-native-elements';
 import Layout from '../components/Layout';
 
 export default class HomePage extends React.Component {
-  static navigationOptions = {
-    title: 'Home',
-  };
-
   render() {
     return (
-      <Layout title="Home" navigation={this.props.navigation}>
+      <Layout title="Home">
         <Text>Home Screen</Text>
         <Card title="CARD WITH DIVIDER">
           <View>

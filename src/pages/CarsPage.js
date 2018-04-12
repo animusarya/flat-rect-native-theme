@@ -15,13 +15,9 @@ const allCarsQuery = gql`
 `;
 
 export default class CarsPage extends React.Component {
-  static navigationOptions = {
-    title: 'Cars',
-  };
-
   render() {
     return (
-      <Layout title="Cars" navigation={this.props.navigation}>
+      <Layout title="Cars">
         <Text>Cars Screen</Text>
         <Query query={allCarsQuery}>
           {({ loading, error, data }) => {

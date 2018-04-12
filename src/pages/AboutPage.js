@@ -4,13 +4,9 @@ import { Button, Text } from 'react-native';
 import Layout from '../components/Layout';
 
 export default class HomePage extends React.Component {
-  static navigationOptions = {
-    title: 'About',
-  };
-
   render() {
     return (
-      <Layout title="About" navigation={this.props.navigation}>
+      <Layout title="About">
         <Text>About Screen</Text>
         <Button
           title="Go back"

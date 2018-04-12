@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button, Text } from 'react-native';
 import { Col, Grid } from 'react-native-easy-grid';
+import { withNavigation } from 'react-navigation';
 
-export default class Header extends React.Component {
+class Header extends React.Component {
   static navigationOptions = {
     title: 'About',
   };
@@ -24,3 +25,5 @@ export default class Header extends React.Component {
     );
   }
 }
+
+export default withNavigation(Header);
