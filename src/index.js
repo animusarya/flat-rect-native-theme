@@ -1,5 +1,5 @@
 import React from 'react';
-import { DrawerNavigator } from 'react-navigation';
+import { createDrawerNavigator } from 'react-navigation';
 import { ApolloProvider } from 'react-apollo';
 import { ThemeProvider } from 'styled-components';
 
@@ -12,7 +12,7 @@ import CarsPage from './pages/CarsPage';
 import ContactPage from './pages/ContactPage';
 
 // https://reactnavigation.org/docs/drawer-navigator.html
-const RootStack = DrawerNavigator(
+const RootStack = createDrawerNavigator(
   {
     Home: {
       screen: HomePage,

@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Grid } from 'react-native-easy-grid';
 import styled from 'styled-components';
 
-import Header from '../components/Header';
+import Header from './Header';
 
 const Container = styled.View`
   flex: 1;

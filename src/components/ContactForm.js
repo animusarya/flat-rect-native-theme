@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'react-native-elements';
 import { withFormik } from 'formik';
-import Yup from 'yup';
+import * as yup from 'yup';
 import {
   FieldsContainer,
   Fieldset,
@@ -55,12 +55,13 @@ const enhancer = withFormik({
     email: '',
     message: '',
   }),
-  validationSchema: Yup.object().shape({
-    name: Yup.string().required('Full name is required!'),
-    email: Yup.string()
+  validationSchema: yup.object().shape({
+    name: yup.string().required('Full name is required!'),
+    email: yup
+      .string()
       .email('Invalid email address')
       .required('Email is required!'),
-    message: Yup.string().required('Message is required!'),
+    message: yup.string().required('Message is required!'),
   }),
   handleSubmit: (values, { setSubmitting, props }) => {
     props.handleSubmit(values);

@@ -31,7 +31,7 @@ export default class HomePage extends React.Component {
         />
         <Button
           title="Open drawer"
-          onPress={() => this.props.navigation.navigate('DrawerToggle')}
+          onPress={() => this.props.navigation.openDrawer()}
         />
       </Layout>
     );
