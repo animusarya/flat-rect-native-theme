@@ -11,7 +11,7 @@ import SecondBgImage from './SecondBgImage';
 const MainContainer = styled.View`
   flex: 1;
   width: 300;
-  height: 500;
+  height: 320;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: flex-start;

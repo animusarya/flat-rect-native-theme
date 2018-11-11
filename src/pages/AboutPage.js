@@ -1,5 +1,14 @@
 import React from 'react';
-import { AppRegistry, StyleSheet, TouchableOpacity, Button, Text, View, ScrollView, Image,} from 'react-native';
+import {
+  AppRegistry,
+  StyleSheet,
+  TouchableOpacity,
+  Button,
+  Text,
+  View,
+  ScrollView,
+  Image,
+} from 'react-native';
 
 import styled from 'styled-components';
 import Layout from '../components/Layout';
@@ -83,10 +92,10 @@ export default class HomePage extends React.Component {
     return (
       <ScrollView>
         <Layout title="About">
-        <TouchableOpacity onPress={this._onPressButton}>
-          <Container>
-            <MainScreen />
-          </Container>
+          <TouchableOpacity onPress={this._onPressButton}>
+            <Container>
+              <MainScreen />
+            </Container>
           </TouchableOpacity>
           <SecondContainer>
             <Title>Lovern Apartment</Title>
@@ -99,16 +108,14 @@ export default class HomePage extends React.Component {
             </TouchableOpacity>
           </SecondContainer>
           <ViewSlider>
-             <TouchableOpacity onPress={this._onPressButton}>
-            <CirceleButton>
-              <RightArow source={require('../assets/Right.png')} />
-            </CirceleButton>
+            <TouchableOpacity onPress={this._onPressButton}>
+              <CirceleButton>
+                <RightArow source={require('../assets/Right.png')} />
+              </CirceleButton>
             </TouchableOpacity>
-              <SubTitleTwo>
-                slider to book
-              </SubTitleTwo>
-           </ViewSlider>
-           <SwitchExample />
+            <SubTitleTwo>slider to book</SubTitleTwo>
+          </ViewSlider>
+          <SwitchExample />
           <Button
             title="Go back"
             onPress={() => this.props.navigation.goBack()}

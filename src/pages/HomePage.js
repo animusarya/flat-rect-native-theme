@@ -1,11 +1,12 @@
 import React from 'react';
-import { Text, View, ScrollView ,} from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 
 import styled from 'styled-components';
 import { Ionicons } from '@expo/vector-icons';
 import Layout from '../components/Layout';
 import SectionSecond from '../components/SectionSecond';
-import SectionThree from '../components/SectionThree';
+import SectionThree from '../components/SectionThree';m
+import AlertButton from '../components/elements/AlertButton';
 
 const MainContainer = styled.View`
   flex: 1;
@@ -70,6 +71,7 @@ export default class HomePage extends React.Component {
           </MainContainer>
           <SectionSecond />
           <SectionThree />
+          <AlertButton />
         </Layout>
       </ScrollView>
     );
