@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import {AppRegistry,
+import { AppRegistry,
   StyleSheet,
   TouchableOpacity,
   Text, View, Image,} from 'react-native';
 
 import styled from 'styled-components';
 import { Ionicons } from '@expo/vector-icons';
-import BackgroundImage from './BackgroundImage';
+import SecondBgImage from './SecondBgImage';
 
 const MainContainer = styled.View`
   flex: 1;
   width: 300;
-  height: 320;
+  height: 500;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: flex-start;
@@ -54,8 +54,8 @@ const SubTitle = styled.Text`
 const ReviewImage = styled.Image`
   width: 30;
   height: 30;
-  margin-left : 5;
-  border-radius : 12;
+  margin-left: 5;
+  border-radius: 12;
 `;
 
 const Container = styled.View`
@@ -65,13 +65,13 @@ const Container = styled.View`
   flex-direction: row;
 `;
 
-export default class SectionSecond extends Component {
+export default class SectionThree extends Component {
   render() {
     return (
       <TouchableOpacity onPress={this._onPressButton}>
       <MainContainer>
         <RightView>
-          <BackgroundImage />
+          <SecondBgImage />
         </RightView>
         <LeftView>
           <Title>£900/month</Title>
@@ -83,7 +83,7 @@ export default class SectionSecond extends Component {
           </Container>
         </LeftView>
       </MainContainer>
-      </TouchableOpacity>
+         </TouchableOpacity>
     );
   }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Image, View, Text, } from 'react-native';
+import {AppRegistry, Image, View, Text, } from 'react-native';
 
 import styled from 'styled-components';
 
@@ -35,24 +35,23 @@ const SecondContainer = styled.View`
 
 const Title = styled.Text`
   text-align: left;
-  font-size: 19;
+  font-size: 22;
   margin-top: 165;
   font-weight: bold;
   color: white;
   margin-left: 20;
 `;
 
-
-export default class BackgroundImage extends Component {
+export default class SecondBgImage extends Component {
   render() {
     return (
       <MainContainer>
         <FirstContainer>
-            <MapImage  source={require('../assets/table.jpeg')} />
+            <MapImage  source={require('../assets/flat.jpg')} />
         </FirstContainer>
         <SecondContainer>
           <Title>
-            Lovern Apartment
+          Cozy Flat222
           </Title>
         </SecondContainer>
       </MainContainer>
@@ -60,4 +59,4 @@ export default class BackgroundImage extends Component {
   }
 }
 
-AppRegistry.registerComponent('BackgroundImage', () => BackgroundImage);
+AppRegistry.registerComponent('BackgroundImage', () => SecondBgImage);

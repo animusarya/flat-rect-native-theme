@@ -1,10 +1,11 @@
 import React from 'react';
-import { Text, View, ScrollView } from 'react-native';
+import { Text, View, ScrollView ,} from 'react-native';
 
 import styled from 'styled-components';
 import { Ionicons } from '@expo/vector-icons';
 import Layout from '../components/Layout';
 import SectionSecond from '../components/SectionSecond';
+import SectionThree from '../components/SectionThree';
 
 const MainContainer = styled.View`
   flex: 1;
@@ -12,6 +13,7 @@ const MainContainer = styled.View`
   height: 100;
   flex-direction: row;
   justify-content: center;
+  margin-top: 50;
 `;
 
 const LeftContainer = styled.View`
@@ -33,10 +35,10 @@ const Title = styled.Text`
 `;
 
 const SubTitle = styled.Text`
-  font-size: 12;
+  font-size: 18;
   padding-left: 15;
   color: #d1d6e3;
-  font-weight: bold;
+  font-weight: 500;
 `;
 
 const IconView = styled.View`
@@ -67,6 +69,7 @@ export default class HomePage extends React.Component {
             </RightContainer>
           </MainContainer>
           <SectionSecond />
+          <SectionThree />
         </Layout>
       </ScrollView>
     );

@@ -15,7 +15,7 @@ export default class Layout extends React.Component {
     return (
       <Grid>
         <Row size={15}>
-          <Header title={this.props.title} navigation={this.props.navigation} />
+          {/* <Header title={this.props.title} navigation={this.props.navigation} /> */}
         </Row>
         <Row size={85}>
           <Container>{this.props.children}</Container>
