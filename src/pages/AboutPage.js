@@ -92,7 +92,7 @@ export default class HomePage extends React.Component {
     return (
       <ScrollView>
         <Layout title="About">
-          <TouchableOpacity onPress={this._onPressButton}>
+          <TouchableOpacity>
             <Container>
               <MainScreen />
             </Container>

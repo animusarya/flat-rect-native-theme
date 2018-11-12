@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import { AppRegistry,
+import {
+  AppRegistry,
   StyleSheet,
   TouchableOpacity,
-  Text, View, Image,} from 'react-native';
+  Text,
+  View,
+  Image,
+  } from 'react-native';
 
 import styled from 'styled-components';
 import { Ionicons } from '@expo/vector-icons';
@@ -69,21 +73,21 @@ export default class SectionThree extends Component {
   render() {
     return (
       <TouchableOpacity onPress={this._onPressButton}>
-      <MainContainer>
-        <RightView>
-          <SecondBgImage />
-        </RightView>
-        <LeftView>
-          <Title>£900/month</Title>
-          <SubTitle>Double family house</SubTitle>
-          <Container>
-            <ReviewImage  source={require('../assets/bulding.jpg')} />
-            <ReviewImage  source={require('../assets/flat.jpg')} />
-            <ReviewImage  source={require('../assets/table.jpeg')}/>
-          </Container>
-        </LeftView>
-      </MainContainer>
-         </TouchableOpacity>
+        <MainContainer>
+          <RightView>
+            <SecondBgImage />
+          </RightView>
+          <LeftView>
+            <Title>£900/month</Title>
+            <SubTitle>Double family house</SubTitle>
+            <Container>
+              <ReviewImage source={require('../assets/bulding.jpg')} />
+              <ReviewImage source={require('../assets/flat.jpg')} />
+              <ReviewImage source={require('../assets/table.jpeg')} />
+            </Container>
+          </LeftView>
+        </MainContainer>
+      </TouchableOpacity>
     );
   }
 }
