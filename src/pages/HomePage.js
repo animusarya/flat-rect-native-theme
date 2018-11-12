@@ -18,7 +18,7 @@ export default class HomePage extends React.Component {
           <SectionSecond />
           <SectionThree />
           <AlertButton />
-          <Button title="Go back" onPress={() => navigate('About')} />
+          <Button title="Go About" onPress={() => navigate('About')} />
         </Layout>
       </ScrollView>
     );

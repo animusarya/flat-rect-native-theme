@@ -14,6 +14,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import MainScreen from '../components/MainScreen';
 import SwitchExample from '../components/SwitchExample ';
+import Carousel from '../components/Carousel';
 
 const Container = styled.View`
   width: 500;
@@ -116,6 +117,7 @@ export default class HomePage extends React.Component {
             <SubTitleTwo>slider to book</SubTitleTwo>
           </ViewSlider>
           <SwitchExample />
+          <Carousel />
           <Button
             title="Go back"
             onPress={() => this.props.navigation.goBack()}

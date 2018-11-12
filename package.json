@@ -30,6 +30,7 @@
     "react-native-elements": "^0.19.1",
     "react-native-snap-carousel": "^3.7.5",
     "react-navigation": "^2.18.2",
+    "simple-carousel-react-native": "^1.0.2",
     "styled-components": "^3.4.9",
     "yup": "^0.26.6"
   },

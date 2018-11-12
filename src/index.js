@@ -41,7 +41,7 @@ const RootStack = createDrawerNavigator(
     },
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'About',
   },
 );
 
