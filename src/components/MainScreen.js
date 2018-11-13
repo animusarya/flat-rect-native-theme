@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, TouchableOpacity, Image, View, Text, } from 'react-native';
+import {
+  AppRegistry,
+  StyleSheet,
+  TouchableOpacity,
+  Image,
+  View,
+  Text,
+} from 'react-native';
 import styled from 'styled-components';
 
 const MainContainer = styled.View`
@@ -7,7 +14,6 @@ const MainContainer = styled.View`
   height: 535;
   flex: 1;
   background-color: #eee;
-  margin-top: -10;
 `;
 
 const FirstContainer = styled.View`
@@ -47,14 +53,12 @@ export default class MainScreen extends Component {
     return (
       <MainContainer>
         <FirstContainer>
-          <MapImage source= {require('../assets/table.jpeg')} />
+          <MapImage source={require('../assets/table.jpeg')} />
         </FirstContainer>
         <SecondContainer>
           <TouchableOpacity onPress={this._onPressButton}>
-            <Title>
-             £900/month
-            </Title>
-         </TouchableOpacity>
+            <Title>£900/month</Title>
+          </TouchableOpacity>
         </SecondContainer>
       </MainContainer>
     );

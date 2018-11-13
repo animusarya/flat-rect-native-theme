@@ -10,11 +10,12 @@ import {
   Image,
 } from 'react-native';
 
+import { MaterialIcons } from '@expo/vector-icons';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import MainScreen from '../components/MainScreen';
 import SwitchExample from '../components/SwitchExample ';
-import Carousel from '../components/Carousel';
+import ImageSlider from '../components/ImageSlider';
 
 const Container = styled.View`
   width: 500;
@@ -90,6 +91,7 @@ const SubTitleTwo = styled.Text`
 
 export default class HomePage extends React.Component {
   render() {
+    const { navigate } = this.props.navigation;
     return (
       <ScrollView>
         <Layout title="About">
@@ -117,11 +119,10 @@ export default class HomePage extends React.Component {
             <SubTitleTwo>slider to book</SubTitleTwo>
           </ViewSlider>
           <SwitchExample />
-          <Carousel />
-          <Button
-            title="Go back"
-            onPress={() => this.props.navigation.goBack()}
-          />
+          <MaterialIcons name="heart" size={32} color="green" />
+
+          <ImageSlider />
+          <Button title="Go Home" onPress={() => navigate('Home')} />
         </Layout>
       </ScrollView>
     );
