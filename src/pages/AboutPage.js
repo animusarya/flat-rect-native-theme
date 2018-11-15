@@ -10,11 +10,9 @@ import {
   Image,
 } from 'react-native';
 
-import { MaterialIcons } from '@expo/vector-icons';
 import styled from 'styled-components';
 import Layout from '../components/Layout';
 import MainScreen from '../components/MainScreen';
-import SwitchExample from '../components/SwitchExample ';
 import ImageSlider from '../components/ImageSlider';
 
 const Container = styled.View`
@@ -118,9 +116,6 @@ export default class HomePage extends React.Component {
             </TouchableOpacity>
             <SubTitleTwo>slider to book</SubTitleTwo>
           </ViewSlider>
-          <SwitchExample />
-          <MaterialIcons name="heart" size={32} color="green" />
-
           <ImageSlider />
           <Button title="Go Home" onPress={() => navigate('Home')} />
         </Layout>

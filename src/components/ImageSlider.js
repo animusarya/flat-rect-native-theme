@@ -5,7 +5,14 @@ import styled from 'styled-components';
 
 const FirstImage = styled.Image`
   flex: 1;
-  width: 700;
+  width: 690;
+  height: 700;
+  resize-mode: cover;
+`;
+
+const ImageView = styled.View`
+  flex: 1;
+  width: 320;
   height: 700;
   resize-mode: cover;
 `;
@@ -14,19 +21,17 @@ export default class ImageSlider extends React.Component {
   render() {
     return (
       <Carousel>
-        <View>
+        <ImageView>
           <Text>
             <FirstImage source={require('../assets/buildingfirst.jpeg')} />
           </Text>
-        </View>
-
-        <View>
+        </ImageView>
+        <ImageView>
           <Image source={require('../assets/secondBuilding.jpeg')} />
-        </View>
-
-        <View>
+        </ImageView>
+        <ImageView>
           <Image source={require('../assets/thirdimage.jpeg')} />
-        </View>
+        </ImageView>
       </Carousel>
     );
   }
